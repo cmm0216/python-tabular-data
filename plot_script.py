@@ -10,8 +10,7 @@ species = dataframe.species
 regression = stats.linregress(x, y)
 slope = regression.slope
 intercept = regression.intercept
-#plt.scatter(x, y, label = 'Data', c = dataframe.species.map(color))
-plt.scatter(x, y, label = 'Data')
+plt.scatter(x, y, label = 'Data', c = dataframe.species.map(color))
 plt.plot(x, slope * x + intercept, color = "orange", label = 'Fitted line')
 plt.xlabel("Petal length (cm)")
 plt.ylabel("Sepal length (cm)")
