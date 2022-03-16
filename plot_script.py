@@ -26,7 +26,7 @@ ________
 Then check working directory for a saved .png from the iris.csv file!
 """
 
-def plotfile():
+def plotfile(data):
 	iris = pd.read_csv(data)
 	x = iris.petal_length_cm
 	y = iris.sepal_length_cm
@@ -42,4 +42,5 @@ def plotfile():
 	plt.savefig("petal_v_sepal_length_species_regress_Bestpractices2.png")
 
 if __name__ == "__main__":
-	plotfile()
+	data = "iris.csv"
+	plotfile(data)
