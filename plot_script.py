@@ -7,11 +7,11 @@ print("This script will give you a plot of petal vs. sepal length.")
 
 """
 Creates a scatter plot of petal vs septal length, that is color coded based on species, from an example file
-given for n. 
+given in the form of a variable "data". 
 
 Parameters
 __________
-	n: filename with quotes around it.
+	data: filename with quotes around it.
 The name you type in is the name of the .csv file you;d like a plot for. Should match the same 
 file setup as example file "iris.csv"
 
@@ -21,7 +21,8 @@ A .png plot handmade special for you :)
 
 Examples
 ________
->>> plotfile("iris.csv")
+>>> data = "iris.csv"
+>>> plot_script.plotfile(data)
 Then check working directory for a saved .png from the iris.csv file!
 """
 
